@@ -95,6 +95,19 @@ def bill(unit):
         print("Total Bill: ", ((100 * 3.50) + (100 * 5)) + unit)
     elif unit <= 300:
         print("Total Bill: ", ((100 * 3.50) + (100 * 5) + (100 * 7)) + unit)
+        
+def count_vowel_consonant(string):
+    vowel = 0
+    consonant = 0
+
+    if i in string:
+        if i in i.isalpha():
+            if i in "aeiouAEIOU":
+                vowel += 1
+            else:
+                consonant += 1
+    print(f"Vowels: {vowel}")
+    print(f"Consonant: {consonant}"
 
 while True:
     print("\n===== MENU =====")
@@ -119,6 +132,7 @@ while True:
     print("19. leap yaer")
     print("20. Greater between three number")
     print("21. Electricity bill")
+    print("22. Vowel Consonant")
     print("0. Exit")
    
     choice = int(input("Enter your preference: "))
@@ -220,6 +234,10 @@ while True:
     elif choice == 21:
         unit = int(input("Enter your unit: "))
         bill(unit)
+
+    elif choice == 22:
+        text = input("Enter the string: ")
+        count_vowel_consonant(text)
        
     elif choice == 0:
         print("Thank you! Program terminated.")
